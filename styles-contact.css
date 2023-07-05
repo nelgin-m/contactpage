@@ -61,14 +61,13 @@ html, body {
   padding: 0;
   margin: 0;
   background-image: url(images/ishtar-deskmat.png);
-  background-size: cover; background-repeat: no-repeat; background-attachment: fixed; 
+  background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center center;
 	
 	
 }
 
 .center {
     width: 50%;
-	min-width: 300px;
 	padding: 2%;
     margin: 100px auto;
  	background: #222020f9; /*this uses opacity of 75% for the background color*/
@@ -84,10 +83,20 @@ html, body {
 	
 }
 
+#profile{
+    margin-bottom: 16px;
+	text-align: center;
+	width: 40%;
+	border: 5px solid #b81c0e6e;
+	
+	
+}
+
+
 h1 {
 	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
 	font-family:'Exo 2', sans-serif;;
-	font-size: 2em;
+	font-size: 2.5em;
     margin: 0px auto 10px auto;
     color: #fff;
 }
@@ -105,10 +114,11 @@ h2 {
 p {
 	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
 	font-family:'Exo 2', sans-serif;;
-	font-size: 1.2em;
+	font-size: 1em;
     line-height: 1.6;
     color: #fff;
 }
+
 
 
 nav {
@@ -140,7 +150,7 @@ nav li{
 
 
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:600px) {
 	h1 {
 		font-size: 1em;
 		line-height: 1.5em;
@@ -149,4 +159,39 @@ nav li{
 		font-size: 1em;	
 		line-height: 1.5em;
 	}
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+	font-family:'Exo 2', sans-serif;;
+	font-size: 1.2em;
+    line-height: 1.6;
+	background: #222020e9;
+	overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+	background-color: #e6d3b5fe;
+	color: #b81c0e;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+	background-color: #b81c0e;
+	color: white;
+  }
+
+.navlogo {
+	align-content: right;
 }
